@@ -49,7 +49,7 @@ layout: default
                   <span id='fed-nav'>
                     <a href="#federal-name">Federal</a></li>
                   </span>
-                  
+
                 </ul>
             </p>
 
@@ -69,7 +69,7 @@ layout: default
                             <th class='hidden-xs'><i class='fa fa-map-marker'></i> Address</th>
                             <th><i class='fa fa-external-link'></i> Links</th>
                             <th></th>
-                            
+
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -92,7 +92,7 @@ layout: default
                             <th class='hidden-xs'><i class='fa fa-map-marker'></i> Address</th>
                             <th><i class='fa fa-external-link'></i> Links</th>
                             <th></th>
-                            
+
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -141,7 +141,7 @@ layout: default
     </div>
 </div>
 
-<div class='row'>
+<!--<div class='row'>
     <div class='col-md-5 col-md-offset-2'>
         <br />
         <h2>About</h2>
@@ -158,7 +158,7 @@ layout: default
     <div class='col-md-3 hidden-xs hidden-sm'>
         <img class='img-responsive' src='images/usa.png' title='The United States of America'  alt='The United States of America' />
     </div>
-</div>
+</div>-->
 
 <!-- Modal -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
@@ -251,7 +251,7 @@ layout: default
 </script>
 
 <script id="modalGuts" type="text/EJS">
-    
+
     <div class='row'>
         <div class='col-xs-4'>
             <% if (info.person.photoUrl) { %>
@@ -306,7 +306,7 @@ layout: default
       $("#address").val(convertToPlainString($.address.parameter('address')));
       if ($("#address").val())
         addressSearch();
-      
+
       $('#address-search').click(function(){
         addressSearch();
       });
@@ -318,12 +318,12 @@ layout: default
             scrollTop: scroll_to.offset().top
         }, 1000);
       });
-      
+
       $('#find-me').click(function(){
-        findMe(); 
+        findMe();
         return false;
       });
-      
+
       $(":text").keydown(function(e){
           var key =  e.keyCode ? e.keyCode : e.which;
           if(key === 13) {
